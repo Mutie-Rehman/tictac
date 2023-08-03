@@ -1,6 +1,5 @@
 # tictac
-
-A new Flutter project.
+I have created this game for fun purpose. And in this App there are two screens first one is the splash screen in which i have given the game logo and button through which we can start playing the game. And the other screen is the main screen in which we have scoreboard which shows who win how many games and the game counter will set to zero again by pressing the reset button.
 
 ## Getting Started
 
