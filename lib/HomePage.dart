@@ -157,7 +157,7 @@ class _HomePageState extends State<HomePage> {
 
     //case 4
     if (displayXO[3] == displayXO[4] &&
-        displayXO[3] == displayXO[6] &&
+        displayXO[3] == displayXO[5] &&
         displayXO[3] != "") {
       _showWinDialog(displayXO[3]);
     }
@@ -231,11 +231,15 @@ class _HomePageState extends State<HomePage> {
             title: const Text("Oops Draw"),
             actions: <Widget>[
               FloatingActionButton(
+                backgroundColor: Colors.black,
                 onPressed: () {
                   _clearBoard();
                   Navigator.of(context).pop();
                 },
-                child: const Text("Play Again"),
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 8.0),
+                  child: const Text("Play Again"),
+                ),
               )
             ],
           );
